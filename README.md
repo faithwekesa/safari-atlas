@@ -2,7 +2,7 @@
 
 A full-screen travel slider for nine of Africa's most loved destinations. The big photo changes as you move through the places, the title and description rise in, and a stack of cards lets you see what comes next.
 
-Live site: add the link here after deploying.
+Live site: https://safari-atlas.vercel.app
 
 ## What it does
 
