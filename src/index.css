@@ -245,3 +245,13 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 }
 
 .bgs .bg:nth-child(1) .bg-img { object-position: 15% 40%; }
+
+.stage[data-kind='card'] .bg.on { animation-duration: 0.9s; }
+.stage[data-kind='fade'] .bg.on { animation-duration: 0.9s; }
+.stage[data-kind='slide'] .bg.on { animation-duration: 1s; }
+.stage[data-kind='rise'] .bg.on { animation-duration: 0.9s; }
+.stage .bg.out, .stage[data-kind='slide'] .bg.out { animation-duration: 1s; }
+
+.hi { animation-duration: 0.7s; animation-delay: calc(0.08s + var(--n, 0) * 0.07s); }
+
+.card, .card.gone { transition-duration: 0.7s, 0.3s, 0.3s; }
