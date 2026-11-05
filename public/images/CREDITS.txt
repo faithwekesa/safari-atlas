@@ -1,0 +1,12 @@
+maasai-mara.jpg: photo by kabirpatel on Pixabay, https://pixabay.com/photos/wildebeest-migration-kenya-3995945/
+giza.jpg: photo by TheDigitalArtist on Pixabay, https://pixabay.com/photos/pyramids-egypt-egyptian-ancient-2371501/
+victoria-falls.jpg: photo by 8moments on Pixabay, https://pixabay.com/photos/waterfall-victoria-falls-spray-2227010/
+sossusvlei.jpg: photo by pvdberg on Pixabay, https://pixabay.com/photos/sossusvlei-namib-namibia-sand-dune-5339728/
+zanzibar.jpg: photo by klimentgrozdanoski on Pixabay, https://pixabay.com/photos/africa-zanzibar-beach-tanzania-5135407/
+table-mountain.jpg: photo by D_V_Rensburg on Pixabay, https://pixabay.com/photos/sunset-table-mountain-landscape-sky-5004905/
+merzouga.jpg: photo by JimboChan on Pixabay, https://pixabay.com/photos/relax-peaceful-golden-sands-sahara-1137240/
+kilimanjaro.jpg: photo by GregMontani on Pixabay, https://pixabay.com/photos/mount-kilimanjaro-mountain-safari-1025146/
+maasai-mara.jpg: photo by jeffjbennett on Pixabay, https://pixabay.com/photos/kenya-maasai-mara-lion-2063028/
+zanzibar.jpg: photo by guenter42 on Pixabay, https://pixabay.com/photos/zanzibar-beach-sea-africa-paradise-2783447/
+zanzibar.jpg: photo by koseb on Pixabay, https://pixabay.com/photos/paradise-web-sea-beach-sand-1582173/
+merzouga.jpg: photo by BulentYILDIZ on Pixabay, https://pixabay.com/photos/camels-desert-caravan-africa-8709070/
