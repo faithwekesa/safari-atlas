@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { DESTINATIONS } from './destinations.js';
 
 const N = DESTINATIONS.length;
-const AUTO_MS = 6000;
+const AUTO_MS = 3300;
 const KINDS = ['rise'];
 const pad = (n) => String(n).padStart(2, '0');
 
