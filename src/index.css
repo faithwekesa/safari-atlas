@@ -255,3 +255,12 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .hi { animation-duration: 0.7s; animation-delay: calc(0.08s + var(--n, 0) * 0.07s); }
 
 .card, .card.gone { transition-duration: 0.7s, 0.3s, 0.3s; }
+
+.stage[data-layout='fan'] .card { --step: 8deg; transform: rotate(calc((var(--off) - 3) * var(--step))); }
+.stage[data-layout='fan'] .card[style*='--off: 6'], .stage[data-layout='fan'] .card[style*='--off: 7'], .stage[data-layout='fan'] .card[style*='--off: 8'] { opacity: 0; pointer-events: none; }
+@media (min-width: 1101px) {
+  .stage[data-layout='fan'] .card { --card-w: 180px; --card-h: 262px; }
+  .stage[data-layout='fan'] .rail { left: calc(100% - 28vw); bottom: 110px; }
+  .stage[data-layout='fan'] .copy { left: 13vw; top: 60%; }
+  .stage[data-layout='fan'] .arrows { margin-left: calc(13vw - clamp(20px, 4.5vw, 64px)); }
+}
