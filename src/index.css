@@ -310,3 +310,10 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .bg-img, .bg.on .bg-img, .bg.out .bg-img { transform: none; transition: none; }
 
 .stage[data-layout='fan'] .rail { display: none; }
+
+.stage[data-layout='fan'] .rail { display: none; }
+
+.copy .hi, .copy .hi.up { animation: fadeIn 0.9s ease-in-out both; animation-delay: 0.3s; transform: none; }
+.copy-out { pointer-events: none; animation: textOut 0.35s ease-in-out both; }
+.copy-out .hi, .copy-out .hi.up { animation: none; opacity: 1; }
+@keyframes textOut { from { opacity: 1; } to { opacity: 0; } }

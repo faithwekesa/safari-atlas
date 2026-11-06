@@ -78,6 +78,38 @@ export default function App() {
     if (Math.abs(dx) > 50) (dx < 0 ? next : prev)();
   };
 
+  const copy = (d, out) => (
+    <section className={out ? 'copy copy-out' : 'copy'} key={(out ? 'o' : 'c') + d.id} aria-live={out ? undefined : 'polite'} aria-hidden={out ? 'true' : undefined}>
+        <p className="loc hi" style={{ '--n': 0 }}>
+          <span className="bar" />
+          {d.place}, {d.country}
+        </p>
+        <h1>
+          {d.title.map((line, i) => (
+            <span className="ln" key={line}>
+              <span className="hi up" style={{ '--n': 1 + i }}>{line}</span>
+            </span>
+          ))}
+        </h1>
+        <p className="desc hi" style={{ '--n': 3 }}>{d.text}</p>
+        <a
+          className="discover hi"
+          style={{ '--n': 4 }}
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.map)}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" />
+              <circle cx="12" cy="9.5" r="2.5" />
+            </svg>
+          </i>
+          Discover location
+        </a>
+    </section>
+  );
+
   return (
     <main
       className="stage"
@@ -110,35 +142,8 @@ export default function App() {
         <span className="top-note">Africa, {N} places to see</span>
       </header>
 
-      <section className="copy" key={cur.id} aria-live="polite">
-        <p className="loc hi" style={{ '--n': 0 }}>
-          <span className="bar" />
-          {cur.place}, {cur.country}
-        </p>
-        <h1>
-          {cur.title.map((line, i) => (
-            <span className="ln" key={line}>
-              <span className="hi up" style={{ '--n': 1 + i }}>{line}</span>
-            </span>
-          ))}
-        </h1>
-        <p className="desc hi" style={{ '--n': 3 }}>{cur.text}</p>
-        <a
-          className="discover hi"
-          style={{ '--n': 4 }}
-          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cur.map)}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" />
-              <circle cx="12" cy="9.5" r="2.5" />
-            </svg>
-          </i>
-          Discover location
-        </a>
-      </section>
+      {last >= 0 && last !== index && copy(DESTINATIONS[last], true)}
+      {copy(cur, false)}
 
       <div className="rail">
         {DESTINATIONS.map((d, i) => {
