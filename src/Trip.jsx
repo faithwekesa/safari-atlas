@@ -36,7 +36,7 @@ export function Stepper({ label, value, min, max, onChange, unit }) {
   );
 }
 
-export function Sheet({ children, onClose, label, wide }) {
+export function Sheet({ children, onClose, label, wide, from, to }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose();
     window.addEventListener('keydown', onKey);
@@ -44,7 +44,7 @@ export function Sheet({ children, onClose, label, wide }) {
   }, [onClose]);
   return (
     <div className="sheet" onClick={onClose}>
-      <div className={`sheet-card ${wide ? 'wide' : ''}`} role="dialog" aria-label={label} onClick={(e) => e.stopPropagation()}>
+      <div className={`sheet-card ${wide ? 'wide' : ''} ${from ? 'tinted' : ''}`} style={from ? { '--from': from, '--to': to } : undefined} role="dialog" aria-label={label} onClick={(e) => e.stopPropagation()}>
         <button className="sheet-x" onClick={onClose} aria-label="Close">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
         </button>
@@ -125,7 +125,7 @@ export function Trip({ id, trip, setTrip, onClose }) {
     { label: 'Getting around', note: `${money(c.move[input.style])} per person a day`, value: est.move },
   ];
   return (
-    <Sheet onClose={onClose} label={`Trip plan for ${d.title.join(' ')}`} wide>
+    <Sheet onClose={onClose} label={`Trip plan for ${d.title.join(' ')}`} wide from={d.from} to={d.to}>
       <p className="sheet-kicker"><span className="bar" />Plan your visit · {d.country}</p>
       <h2>{d.title.join(' ')}</h2>
       <TripForm trip={trip} setTrip={setTrip} />

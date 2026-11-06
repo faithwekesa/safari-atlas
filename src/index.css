@@ -553,3 +553,10 @@ body:has(.sheet) .modes { display: none; }
 .sheet-card .form { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); }
 .sheet-card .money, .sheet-card .date, .sheet-card .step, .sheet-card .seg-ctl { background: rgba(0, 0, 0, 0.28); }
 .sheet-card .ledger, .sheet-card .stays a { background: rgba(255, 255, 255, 0.05); }
+
+.sheet-card.tinted { background: linear-gradient(165deg, color-mix(in srgb, var(--from) 58%, #0b0b0b 42%) 0%, color-mix(in srgb, var(--to) 48%, #0b0b0b 52%) 100%); background-color: transparent; opacity: 1; border: 1px solid color-mix(in srgb, var(--from) 40%, rgba(255, 255, 255, 0.35)); }
+.sheet-card.tinted::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: rgba(8, 8, 8, 0.28); pointer-events: none; }
+.sheet-card.tinted > * { position: relative; }
+.sheet-card.tinted > .sheet-x { position: absolute; }
+.sheet-card.tinted .form { background: rgba(0, 0, 0, 0.22); border-color: rgba(255, 255, 255, 0.14); }
+.sheet-card.tinted .money, .sheet-card.tinted .date, .sheet-card.tinted .step, .sheet-card.tinted .seg-ctl { background: rgba(0, 0, 0, 0.3); }
