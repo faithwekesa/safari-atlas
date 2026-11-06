@@ -562,3 +562,7 @@ body:has(.sheet) .modes { display: none; }
 .sheet-card.tinted .money, .sheet-card.tinted .date, .sheet-card.tinted .step, .sheet-card.tinted .seg-ctl { background: rgba(0, 0, 0, 0.3); }
 
 .sheet-card.tinted { background: color-mix(in srgb, var(--from) 52%, #0b0b0b 48%); }
+
+.sheet-card, .sheet-card.wide, .sheet-card.tinted { background: rgba(38, 25, 14, 0.9); border: 1px solid rgba(255, 255, 255, 0.16); }
+.sheet-card.tinted::before { display: none; }
+.sheet-card.tinted .form, .sheet-card .form { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); }
