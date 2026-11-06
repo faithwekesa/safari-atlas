@@ -293,3 +293,14 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 @media (min-width: 1101px) {
   .stage[data-layout='fan'] .copy { top: 52%; }
 }
+
+@media (max-width: 760px) {
+  :root { --card-w: 104px; --card-h: 150px; --gap: 10px; }
+  .arrows .swap { display: none; }
+  .stage[data-layout='row'] .rail { left: 20px; bottom: 86px; }
+  .copy { bottom: 262px; }
+  .card { border-radius: 14px; }
+  .card-txt small { display: none; }
+  .card-txt strong { font-size: 13px; }
+  .card-txt { left: 10px; bottom: 10px; }
+}
