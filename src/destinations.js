@@ -81,12 +81,12 @@ export const DESTINATIONS = [
   },
   {
     id: 'moroccohouses',
-    place: 'Moroccan Old Towns',
+    place: 'Chefchaouen',
     country: 'Morocco',
-    title: ['Moroccan', 'Medinas'],
-    map: 'Medina, Morocco',
+    title: ['Chefchaouen', 'Blue City'],
+    map: 'Chefchaouen, Morocco',
     from: '#5b8fb0',
     to: '#12263a',
-    text: 'Narrow lanes and traditional houses packed close together in the walled old towns of Morocco. Wander the souks and find a rooftop with a view over the town.',
+    text: 'A town in the Rif Mountains of northern Morocco where the walls, doors and steps are washed in shades of blue. Wander the narrow lanes of the old medina and look out over the hills from the viewpoints above town.',
   },
 ];
