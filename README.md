@@ -34,3 +34,7 @@ Then open the link it prints in your browser.
 ## Photo credits
 
 Photo credits are listed in public/images/CREDITS.txt.
+
+## Page layout image
+![Uploading image.png…]()
+
