@@ -79,14 +79,4 @@ export const DESTINATIONS = [
     to: '#1b2a3d',
     text: 'At 5,895 metres it is the highest mountain in Africa and the tallest free-standing mountain in the world. Several routes lead to the summit and climbers pass through rainforest and moorland before reaching the snow.',
   },
-  {
-    id: 'moroccohouses',
-    place: 'Chefchaouen',
-    country: 'Morocco',
-    title: ['Chefchaouen', 'Blue City'],
-    map: 'Chefchaouen, Morocco',
-    from: '#5b8fb0',
-    to: '#12263a',
-    text: 'A town in the Rif Mountains of northern Morocco where the walls, doors and steps are washed in shades of blue. Wander the narrow lanes of the old medina and look out over the hills from the viewpoints above town.',
-  },
 ];

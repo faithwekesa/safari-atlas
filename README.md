@@ -1,6 +1,6 @@
 # Safari Atlas
 
-A full-screen travel slider for nine of Africa's most loved destinations. The big photo changes as you move through the places, the title and description rise in, and a stack of cards lets you see what comes next.
+A full-screen travel slider for eight of Africa's most loved destinations. The big photo changes as you move through the places, the title and description rise in, and a stack of cards lets you see what comes next.
 
 Live site: https://safari-atlas.vercel.app
 
@@ -16,7 +16,7 @@ Live site: https://safari-atlas.vercel.app
 
 ## Places
 
-Maasai Mara in Kenya, the Pyramids of Giza in Egypt, Victoria Falls on the Zambia and Zimbabwe border, Sossusvlei in Namibia, Zanzibar in Tanzania, Table Mountain in South Africa, Merzouga and the old towns of Morocco and Mount Kilimanjaro in Tanzania.
+Maasai Mara in Kenya, the Pyramids of Giza in Egypt, Victoria Falls on the Zambia and Zimbabwe border, Sossusvlei in Namibia, Zanzibar in Tanzania, Table Mountain in South Africa, Merzouga in Morocco and Mount Kilimanjaro in Tanzania.
 
 ## Built with
 
