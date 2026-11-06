@@ -281,3 +281,7 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .stage[data-layout='row'] .card[style*='--off: 7'],
 .stage[data-layout='row'] .card[style*='--off: 8'] { opacity: 1; pointer-events: auto; }
 .stage[data-layout='row'] .rail { width: calc(4 * var(--card-w) + 3 * var(--gap)); clip-path: inset(-50px 0 -60px 0); }
+
+@media (min-width: 1101px) {
+  .stage[data-layout='row'] .rail { left: calc(100% - 64px - 4 * var(--card-w) - 3 * var(--gap)); }
+}
