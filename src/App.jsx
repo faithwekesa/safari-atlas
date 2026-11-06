@@ -3,7 +3,7 @@ import { DESTINATIONS } from './destinations.js';
 
 const N = DESTINATIONS.length;
 const AUTO_MS = 6000;
-const KINDS = ['fade', 'slide', 'rise'];
+const KINDS = ['rise'];
 const pad = (n) => String(n).padStart(2, '0');
 
 function Pic({ d, className }) {
