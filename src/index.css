@@ -560,3 +560,5 @@ body:has(.sheet) .modes { display: none; }
 .sheet-card.tinted > .sheet-x { position: absolute; }
 .sheet-card.tinted .form { background: rgba(0, 0, 0, 0.22); border-color: rgba(255, 255, 255, 0.14); }
 .sheet-card.tinted .money, .sheet-card.tinted .date, .sheet-card.tinted .step, .sheet-card.tinted .seg-ctl { background: rgba(0, 0, 0, 0.3); }
+
+.sheet-card.tinted { background: color-mix(in srgb, var(--from) 52%, #0b0b0b 48%); }
