@@ -308,3 +308,5 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .stage[data-kind] .bg.on { animation: fadeIn 1s ease-in-out both; clip-path: none; }
 .stage[data-kind] .bg.out { animation: hold 1s linear both; }
 .bg-img, .bg.on .bg-img, .bg.out .bg-img { transform: none; transition: none; }
+
+.stage[data-layout='fan'] .rail { display: none; }

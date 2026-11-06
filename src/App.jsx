@@ -174,7 +174,7 @@ export default function App() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5l7 7-7 7" /></svg>
           </button>
           <button className="swap" onClick={() => setLayout(layout === 'fan' ? 'row' : 'fan')} aria-label="Change card layout">
-            {layout === 'fan' ? 'Row view' : 'Fan view'}
+            {layout === 'fan' ? 'Show cards' : 'Hide cards'}
           </button>
         </div>
         <span className="count">
