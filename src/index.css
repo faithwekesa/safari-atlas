@@ -355,3 +355,5 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .stays a { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.22); }
 .stays a:hover { background: rgba(255, 255, 255, 0.26); border-color: rgba(255, 255, 255, 0.5); }
 .stays em, .sheet-note { color: rgba(255, 255, 255, 0.85); }
+
+.count { display: none; }
