@@ -16,6 +16,13 @@ const ITEMS = [
   ['table-mountain', 'table mountain cape town'],
   ['merzouga', 'sahara dunes camel'],
   ['kilimanjaro', 'mount kilimanjaro'],
+  ['lalibela', 'lalibela rock hewn church ethiopia'],
+  ['marrakech', 'marrakech medina morocco'],
+  ['kruger', 'kruger national park elephant'],
+  ['etosha', 'etosha pan wildlife'],
+  ['cape-coast', 'cape coast castle ghana'],
+  ['sal', 'sal cape verde beach'],
+  ['bwindi', 'mountain gorilla bwindi'],
 ];
 
 const [mode, name, arg1, arg2] = process.argv.slice(2);

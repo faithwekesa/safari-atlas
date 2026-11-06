@@ -71,4 +71,67 @@ export const VISITS = {
       { type: 'Lodge', note: 'Lodges on the lower slopes', q: 'lodges near Kilimanjaro National Park' },
     ],
   },
+  lalibela: {
+    best: 'October to March for dry weather and January for the Ethiopian Christmas and Timkat festivals',
+    getThere: 'Fly from Addis Ababa to Lalibela in about 1 hour and the churches are a short walk or tuk-tuk ride from town',
+    stays: [
+      { type: 'Budget', note: 'Simple guesthouses in the town centre', q: 'budget guesthouses Lalibela' },
+      { type: 'Mid-range', note: 'Hotels with views over the valley', q: 'hotels Lalibela Ethiopia' },
+      { type: 'Lodge', note: 'Cliff-top lodges with terraces', q: 'lodges Lalibela Ethiopia' },
+    ],
+  },
+  marrakech: {
+    best: 'March to May and September to November when the days are warm and not too hot',
+    getThere: 'Marrakech Menara airport is about 15 minutes from the old city by taxi and has many direct flights from Europe and Africa',
+    stays: [
+      { type: 'Budget', note: 'Hostels and small riads inside the medina', q: 'budget riads Marrakech medina' },
+      { type: 'Mid-range', note: 'Riads with courtyards and rooftop breakfast', q: 'riads Marrakech medina' },
+      { type: 'Lodge', note: 'Palace hotels with pools and spas', q: 'luxury riads Marrakech' },
+    ],
+  },
+  kruger: {
+    best: 'May to September in the dry winter when animals gather at the rivers and the bush is thin',
+    getThere: 'Fly into Johannesburg and drive about 5 hours or fly to Kruger Mpumalanga airport near Nelspruit and hire a car',
+    stays: [
+      { type: 'Budget', note: 'Rest camp campsites and safari tents inside the park', q: 'camping Kruger National Park' },
+      { type: 'Mid-range', note: 'Guesthouses and bush lodges near the gates', q: 'lodges near Kruger National Park gates' },
+      { type: 'Lodge', note: 'Private reserve lodges with guided drives', q: 'luxury lodges Kruger private reserve' },
+    ],
+  },
+  etosha: {
+    best: 'June to October in the dry season when animals crowd around the waterholes',
+    getThere: 'About 5 hours by road from Windhoek on good tarred roads and most visitors hire a car and drive themselves',
+    stays: [
+      { type: 'Budget', note: 'Campsites at Okaukuejo, Halali and Namutoni', q: 'camping Etosha National Park' },
+      { type: 'Mid-range', note: 'Rest camp chalets and lodges near the gates', q: 'lodges near Etosha National Park' },
+      { type: 'Lodge', note: 'Safari lodges with private game drives', q: 'luxury lodges Etosha' },
+    ],
+  },
+  'cape-coast': {
+    best: 'November to March for dry weather and the Panafest and Emancipation Day events in summer',
+    getThere: 'About 3 hours by road from Accra by taxi or the Cape Coast bus and the castle is in the town centre',
+    stays: [
+      { type: 'Budget', note: 'Guesthouses and hostels near the castle', q: 'budget guesthouses Cape Coast Ghana' },
+      { type: 'Mid-range', note: 'Beach hotels with restaurants', q: 'hotels Cape Coast Ghana' },
+      { type: 'Lodge', note: 'Beachfront resorts near Elmina', q: 'resorts Elmina Cape Coast Ghana' },
+    ],
+  },
+  sal: {
+    best: 'November to June for sunny weather and strong wind for kitesurfing',
+    getThere: 'Fly into Amilcar Cabral airport and Santa Maria is about 20 minutes away by taxi',
+    stays: [
+      { type: 'Budget', note: 'Guesthouses and apartments in Santa Maria', q: 'budget guesthouses Santa Maria Sal Cape Verde' },
+      { type: 'Mid-range', note: 'Beach hotels with breakfast', q: 'hotels Santa Maria Sal Cape Verde' },
+      { type: 'Lodge', note: 'All-inclusive resorts on the sand', q: 'resorts Santa Maria Sal Cape Verde' },
+    ],
+  },
+  bwindi: {
+    best: 'June to September and December to February for drier trails and easier treks',
+    getThere: 'Drive from Entebbe in about 9 to 10 hours or fly to Kihihi airstrip near the park and transfer by road',
+    stays: [
+      { type: 'Budget', note: 'Simple guesthouses and campsites in Buhoma and Rushaga', q: 'budget lodges Bwindi Buhoma' },
+      { type: 'Mid-range', note: 'Lodges with forest views and meals', q: 'lodges Bwindi Impenetrable National Park' },
+      { type: 'Lodge', note: 'Luxury forest lodges with guided walks', q: 'luxury lodges Bwindi Impenetrable Forest' },
+    ],
+  },
 };

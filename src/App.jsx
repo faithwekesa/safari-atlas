@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { DESTINATIONS } from './destinations.js';
 import { VISITS } from './visits.js';
+import { Trip } from './Trip.jsx';
 
 const N = DESTINATIONS.length;
 const AUTO_MS = 3300;
@@ -13,48 +14,7 @@ function Pic({ d, className }) {
   return <img className={className} src={`/images/${d.id}.jpg`} alt="" draggable="false" onError={() => setOk(false)} />;
 }
 
-function Visit({ id, onClose }) {
-  const d = DESTINATIONS.find((x) => x.id === id);
-  const v = VISITS[id];
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
-  if (!d || !v) return null;
-  const link = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
-  return (
-    <div className="sheet" onClick={onClose}>
-      <div className="sheet-card" role="dialog" aria-label={`Plan your visit to ${d.title.join(' ')}`} onClick={(e) => e.stopPropagation()}>
-        <button className="sheet-x" onClick={onClose} aria-label="Close">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
-        </button>
-        <p className="sheet-kicker"><span className="bar" />Plan your visit</p>
-        <h2>{d.title.join(' ')}</h2>
-        <dl>
-          <dt>Best time</dt>
-          <dd>{v.best}</dd>
-          <dt>Getting there</dt>
-          <dd>{v.getThere}</dd>
-        </dl>
-        <p className="sheet-sub">Where to stay</p>
-        <div className="stays">
-          {v.stays.map((st) => (
-            <a key={st.type} href={link(st.q)} target="_blank" rel="noreferrer">
-              <span><b>{st.type}</b><em>{st.note}</em></span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M9 7h8v8" /></svg>
-            </a>
-          ))}
-        </div>
-        <p className="sheet-note">Each button opens a live Google Maps search. Check prices and availability there.</p>
-      </div>
-    </div>
-  );
-}
-
-export default function App() {
+export default function App({ trip, setTrip }) {
   const [view, setView] = useState({ index: 0, last: -1, kind: 'fade' });
   const [paused, setPaused] = useState(false);
   const [layout, setLayout] = useState('row');
@@ -235,7 +195,7 @@ export default function App() {
           <em>/{pad(N)}</em>
         </span>
       </footer>
-      {visit && <Visit id={visit} onClose={() => setVisit(null)} />}
+      {visit && <Trip id={visit} trip={trip} setTrip={setTrip} onClose={() => setVisit(null)} />}
     </main>
   );
 }

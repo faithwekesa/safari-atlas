@@ -10,3 +10,10 @@ maasai-mara.jpg: photo by jeffjbennett on Pixabay, https://pixabay.com/photos/ke
 zanzibar.jpg: photo by guenter42 on Pixabay, https://pixabay.com/photos/zanzibar-beach-sea-africa-paradise-2783447/
 zanzibar.jpg: photo by koseb on Pixabay, https://pixabay.com/photos/paradise-web-sea-beach-sand-1582173/
 merzouga.jpg: photo by BulentYILDIZ on Pixabay, https://pixabay.com/photos/camels-desert-caravan-africa-8709070/
+lalibela.jpg: photo by dMz on Pixabay, https://pixabay.com/photos/ethiopia-axum-lalibela-africa-4117569/
+marrakech.jpg: photo by MemoTravels on Pixabay, https://pixabay.com/photos/morocco-marrakesh-africa-travel-2809965/
+kruger.jpg: photo by cocoparisienne on Pixabay, https://pixabay.com/photos/elephants-animal-elephant-herd-1092508/
+etosha.jpg: photo by pixabairis on Pixabay, https://pixabay.com/photos/glamorous-star-bird-namibia-517970/
+cape-coast.jpg: photo by LifeOfDapo on Pixabay, https://pixabay.com/photos/castle-cape-coast-ghana-2419575/
+sal.jpg: photo by Rasmussalomon on Pixabay, https://pixabay.com/photos/surfing-cap-verde-in-%C3%B8en-sal-1571782/
+bwindi.jpg: photo by NRay91 on Pixabay, https://pixabay.com/photos/gorilla-animal-jungle-primate-7708352/

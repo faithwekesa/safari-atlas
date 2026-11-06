@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "A full-screen slider of Africa's top travel destinations",
+  "description": "Set a budget and see which African destinations you can afford, then book",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
