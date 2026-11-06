@@ -289,3 +289,7 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 @media (min-width: 1101px) {
   .stage[data-layout='fan'] .copy { top: 52%; }
 }
+
+@media (min-width: 1101px) {
+  .stage[data-layout='fan'] .copy { top: 52%; }
+}
