@@ -357,3 +357,6 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .stays em, .sheet-note { color: rgba(255, 255, 255, 0.85); }
 
 .count { display: none; }
+
+.discover, .plan { vertical-align: top; }
+@media (max-width: 760px) { .plan { height: 47px; } }
