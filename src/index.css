@@ -267,3 +267,6 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 
 .stage[data-layout='fan'] .card { --step: 9deg; transform: rotate(calc((var(--off) - 2.5) * var(--step))); }
 .stage[data-layout='fan'] .card[style*='--off: 5'] { opacity: 0; pointer-events: none; }
+
+.stage[data-layout='fan'] .card { --step: 9deg; transform: rotate(calc((var(--off) - 2.5) * var(--step))); }
+.stage[data-layout='fan'] .card[style*='--off: 5'] { opacity: 0; pointer-events: none; }
