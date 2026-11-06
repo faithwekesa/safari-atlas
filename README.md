@@ -1,54 +1,36 @@
 # Safari Atlas
 
-A full-screen travel slider for eight of Africa's most loved destinations. The big photo changes as you move through the places, the title and description rise in, and a stack of cards lets you see what comes next.
+Safari Atlas helps people discover eight of the most striking places in Africa and start planning a trip to them. Many travellers know the famous names but not where to begin. This site puts the places side by side with a short story for each one so a visitor can quickly decide where they want to go.
 
 Live site: https://safari-atlas.vercel.app
 
-## What it does
+## What it helps you do
 
-- Shows one destination at a time with a large photo, a title, a short description and a link that opens the place in Google Maps
-- Moves on by itself every few seconds and pauses while the mouse is over the page
-- Lets you jump straight to any place by clicking its card
-- Has two card layouts, a fan of cards and a simple row, with a button to switch between them
-- Works with the arrow buttons, the left and right arrow keys and swipes on a phone
-- Changes photos with a mix of gentle fade, slide and rise transitions and respects the reduced motion setting
-- Has a coloured gradient for each place that shows while photos load or if a photo is missing
+- Explore eight places across Africa from the Maasai Mara to Table Mountain with a short description of what makes each one special
+- Find out the best time of year to visit and how to get there
+- See where to stay near each place with budget and mid-range and lodge options
+- Open any place on Google Maps to see exactly where it is
+- Browse comfortably on a laptop or a phone
 
-## Places
+## Why I built it
 
-Maasai Mara in Kenya, the Pyramids of Giza in Egypt, Victoria Falls on the Zambia and Zimbabwe border, Sossusvlei in Namibia, Zanzibar in Tanzania, Table Mountain in South Africa, Merzouga in Morocco and Mount Kilimanjaro in Tanzania.
+I wanted a simple and calm way to see what Africa has to offer and to turn that curiosity into a plan. Instead of hunting through many tabs a visitor gets the story and the practical details in one place.
+
+## A note on the travel tips
+
+The best times and travel routes are general guidance. The stay buttons open a live Google Maps search so nothing is invented. Check prices and availability there before you book.
 
 ## Built with
 
-React and Vite with plain CSS. There are no UI libraries or animation libraries.
+React and Vite and plain CSS. The travel details for each place are kept in one data file so places are easy to add or change.
 
 ## Run it on your computer
 
-Install the packages:
-
     npm install
-
-Start the site:
-
     npm run dev
 
-## Photos
+Then open the link it prints in your browser.
 
-The photos are in public/images and are named after the place ids in src/destinations.js. Photographer credits for downloaded photos are in public/images/CREDITS.txt. To swap a photo, save a new one with the same file name.
+## Photo credits
 
-## Project structure
-
-    src/App.jsx           the slider and its behaviour
-    src/destinations.js   the places and their text
-    src/index.css         all the styles and animations
-    scripts/get-images.mjs  optional helper to download photos
-
-## Deploy
-
-    npm run build
-
-The dist folder can be hosted on any static host. On Vercel it deploys with the default Vite settings.
-
-## Notes
-
-Distances and heights in the descriptions are rounded and come from commonly published figures.
+Photo credits are listed in public/images/CREDITS.txt.

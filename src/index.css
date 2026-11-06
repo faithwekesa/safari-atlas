@@ -317,3 +317,41 @@ h1 { font-size: clamp(46px, 5.8vw, 96px); }
 .copy-out { pointer-events: none; animation: textOut 0.35s ease-in-out both; }
 .copy-out .hi, .copy-out .hi.up { animation: none; opacity: 1; }
 @keyframes textOut { from { opacity: 1; } to { opacity: 0; } }
+
+.plan { display: inline-flex; align-items: center; height: 48px; margin-top: 26px; margin-left: 12px; padding: 0 22px; border-radius: 999px; background: rgba(255, 255, 255, 0.14); border: 1.5px solid rgba(255, 255, 255, 0.28); backdrop-filter: blur(8px); font-size: 14px; font-weight: 600; transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.plan:hover { background: #fff; color: #1d1208; border-color: #fff; }
+
+.sheet { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 20px; background: rgba(10, 6, 3, 0.55); backdrop-filter: blur(10px); animation: sheetIn 0.45s ease-in-out both; }
+.sheet-card { position: relative; width: min(560px, 100%); max-height: calc(100svh - 40px); overflow-y: auto; padding: 34px 34px 28px; border-radius: 24px; background: rgba(26, 17, 10, 0.88); border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5); }
+.sheet-x { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, 0.1); transition: background 0.3s; }
+.sheet-x:hover { background: rgba(255, 255, 255, 0.22); }
+.sheet-x svg { width: 18px; height: 18px; }
+.sheet-kicker { display: flex; align-items: center; gap: 12px; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255, 255, 255, 0.78); }
+.sheet-card h2 { margin-top: 12px; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(30px, 5vw, 42px); line-height: 1.05; }
+.sheet-card dl { margin-top: 20px; display: grid; gap: 4px; }
+.sheet-card dt { margin-top: 12px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.sheet-card dd { font-size: 15px; line-height: 1.55; color: rgba(255, 255, 255, 0.9); }
+.sheet-sub { margin-top: 26px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.stays { margin-top: 10px; display: grid; gap: 10px; }
+.stays a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; border-radius: 16px; background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.3s, border-color 0.3s; }
+.stays a:hover { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.3); }
+.stays b { display: block; font-size: 15px; font-weight: 600; }
+.stays em { display: block; margin-top: 2px; font-style: normal; font-size: 13.5px; line-height: 1.45; color: rgba(255, 255, 255, 0.75); }
+.stays svg { flex: none; width: 20px; height: 20px; color: var(--gold); }
+.sheet-note { margin-top: 18px; font-size: 12.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.6); }
+@keyframes sheetIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 760px) {
+  .plan { height: 44px; margin-top: 16px; margin-left: 8px; padding: 0 16px; font-size: 13px; }
+  .sheet-card { padding: 28px 22px 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet { animation: none; }
+}
+
+.sheet { background: rgba(10, 6, 3, 0.35); }
+.sheet-card { background: rgba(255, 255, 255, 0.14); border: 1.5px solid rgba(255, 255, 255, 0.28); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); }
+.sheet-x { background: rgba(255, 255, 255, 0.16); }
+.stays a { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.22); }
+.stays a:hover { background: rgba(255, 255, 255, 0.26); border-color: rgba(255, 255, 255, 0.5); }
+.stays em, .sheet-note { color: rgba(255, 255, 255, 0.85); }
