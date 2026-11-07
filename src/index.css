@@ -570,3 +570,15 @@ body:has(.sheet) .modes { display: none; }
 @supports (color: oklch(from red l c h)) {
   .sheet-card.tinted { background: oklch(from var(--from) 0.27 0.05 h / 0.94); border-color: oklch(from var(--from) 0.5 0.06 h / 0.5); }
 }
+
+.sheet { background: rgba(10, 8, 6, 0.42); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted {
+  background-color: rgba(255, 255, 255, 0.14);
+  background-image: linear-gradient(rgba(16, 12, 9, 0.52), rgba(16, 12, 9, 0.52));
+  border: 1.5px solid rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(40px) saturate(1.1);
+  -webkit-backdrop-filter: blur(40px) saturate(1.1);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+.sheet .sheet-card .form { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.14); }
+.sheet { background: rgba(10, 8, 6, 0.58); }
