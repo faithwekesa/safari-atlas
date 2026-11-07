@@ -608,3 +608,4 @@ body:has(.sheet) .modes { display: none; }
 .sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted { background-color: rgba(255, 255, 255, 0.22); backdrop-filter: blur(26px); }
 
 @media (max-width: 640px) { .pwrap { padding-top: 110px; } .planner { padding-bottom: 40px; } }
+@media (max-width: 760px) { .arrows { display: none; } .ctrl { justify-content: flex-start; } }
