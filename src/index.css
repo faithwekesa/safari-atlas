@@ -582,3 +582,27 @@ body:has(.sheet) .modes { display: none; }
 }
 .sheet .sheet-card .form { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.14); }
 .sheet { background: rgba(10, 8, 6, 0.58); }
+
+.sheet { background: rgba(10, 6, 3, 0.35); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(48px) saturate(1.05);
+  -webkit-backdrop-filter: blur(48px) saturate(1.05);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+.sheet .sheet-card .form { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16); }
+.sheet .sheet-card .money, .sheet .sheet-card .date, .sheet .sheet-card .step, .sheet .sheet-card .seg-ctl { background: rgba(0, 0, 0, 0.22); }
+
+.sheet { background: rgba(10, 6, 3, 0.4); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted { background-color: rgba(255, 255, 255, 0.24); }
+
+.sheet { background: rgba(10, 6, 3, 0.35); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted { background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(60px) saturate(1.05); -webkit-backdrop-filter: blur(60px) saturate(1.05); }
+
+.sheet { backdrop-filter: none; }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted { backdrop-filter: blur(60px) saturate(1.05); }
+
+.sheet { background: rgba(10, 6, 3, 0.38); backdrop-filter: blur(26px); }
+.sheet .sheet-card, .sheet .sheet-card.wide, .sheet .sheet-card.tinted { background-color: rgba(255, 255, 255, 0.22); backdrop-filter: blur(26px); }
